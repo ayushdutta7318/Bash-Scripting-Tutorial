@@ -10,7 +10,10 @@
 #Version: v1
 #####################
 #
-set -x 
+set -x;   #debug mode set
+set -e;   #exit if error in code
+set -0;   #pipefail
+
 
 ps -ef # all processes
 
