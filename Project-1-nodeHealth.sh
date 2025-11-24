@@ -17,7 +17,7 @@ echo "This my first project to monitor node health of my virtual machine";
 
 set -x;   #debug mode set
 set -e;   #exit if error in code
-set -0;   #pipefail
+set -0 pipefail;
 
 df -h
 

@@ -12,13 +12,13 @@
 #
 set -x;   #debug mode set
 set -e;   #exit if error in code
-set -0;   #pipefail
+set -0 pipefail;
 
 
 ps -ef # all processes
 
 ps -ef | grep "/" # only root processes
 
-#using grep with awk
+#using grep with awk to print a specific column. eg here col 2.
 
 ps -ef | grep "/" | awk -F" " '{print $2}';
